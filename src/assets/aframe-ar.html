@@ -1,0 +1,75 @@
+<!doctype HTML>
+<html>
+<script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+<script src="https://raw.githack.com/jeromeetienne/AR.js/1.7.7/aframe/build/aframe-ar.js"> </script>
+<body style='margin : 0px; overflow: hidden;'>
+
+<a-scene>
+    <a-assets>
+        <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
+    </a-assets>
+
+    <a-text value="Welcome to your new room!" position="-1.5 4 -5" color="#000" scale="1.5 1.5 1.5"></a-text>
+    <a-text id="bg"  value="Apply a new color on walls by hovering over the colored cubes." position="-1.5 3.5 -5" ></a-text>
+
+    <a-box position="-3 1 -5" rotation="0 90 30" scale="" color="#F44336"
+           event-set__enter="_event: mouseenter; _target: #bg; color: #F44336">
+    </a-box>
+    <a-box position="-1 2 -5" rotation="0 45 45" scale="0.75 0.75 0.75" color="#2196F3"
+           event-set__enter="_event: mouseenter; _target: #bg; color: #2196F3">
+    </a-box>
+    <a-box position="2 2 -4" rotation="0 45 30" scale="0.75 0.75 0.75" color="#009688"
+           event-set__enter="_event: mouseenter; _target: #bg; color: #009688">
+    </a-box>
+    <a-box position="1 1 -5" rotation="0 70 30" scale="0.9 0.9 0.9" color="#E91E63"
+           event-set__enter="_event: mouseenter; _target: #bg; color: #E91E63">
+    </a-box>
+
+    <a-entity laser-controls="hand: left"></a-entity>
+    <a-entity laser-controls="hand: right"></a-entity>
+
+
+    <a-plane src="#groundTexture" rotation="-90 0 0" width="50" height="50"></a-plane>
+
+    <a-camera>
+        <a-cursor></a-cursor>
+    </a-camera>
+</a-scene>
+
+
+<!--<a-scene embedded arjs>
+    <a-marker preset="hiro">
+
+        <a-box position="0 1.5 0" rotation="0 -45 0" color="#4CC3D9"
+               event-set__enter="_event: mouseenter;  "
+               event-set__leave="_event: mouseleave;  "></a-box>
+       &lt;!&ndash; <a-text id="bg" color="black"  value="Hello, World!"></a-text>&ndash;&gt;
+       &lt;!&ndash;  <a-box position="0 0 0" rotation="0 0 0" color="#4CC3D9" event-set__enter="_event: mouseenter; _target: #bg; color:pink"></a-box>
+        <a-text id="bg" color="black" rotation="0 0 0" value="Hello, World!"></a-text>&ndash;&gt;
+    </a-marker>
+
+    <a-entity camera>
+        <a-camera>
+            <a-cursor></a-cursor>
+        </a-camera>
+    </a-entity>
+
+</a-scene>-->
+</body>
+</html>
+
+
+
+
+
+<!--   <a-box  position="0 0 0" rotation="0 45 0" color="#4CC3D9"
+event-set__enter="_event: mouseenter; _target: #cylinderText; visible: true"
+event-set__leave="_event: mouseleave; _target: #cylinderText; visible: false"></a-box>
+<a-text id="cylinderText" value="This is a cylinder" align="center" color="black" visible="false" position="0 0 0"
+geometry="primitive: plane; width: 1.75" material="color: #333"></a-text>
+-->
+<!--<a-box position="-1.50 0.5 0" rotation="0 45 0" color="#4CC3D9"></a-box>
+ <a-sphere position="0 0.25 0" radius="0.25" color="#EF2D5E"></a-sphere>
+ <a-cylinder position="1.50 0.45 0" radius="0.5" height="0.5" color="#FFC65D"></a-cylinder>
+   <a-octahedron position="0.70 0.45 0"color="#FF926B" radius="0.5"></a-octahedron>
+ <a-plane position="0 0 0" rotation="-90 0 0" width="2" height="2" color="#7BC8A4"></a-plane>-->
