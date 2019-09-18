@@ -7,12 +7,16 @@ import {ModalController} from "@ionic/angular";
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-
+    pikachu=false;
 
     constructor(private modalCtrl: ModalController) { }
 
     ngOnInit() {
 
+    }
+
+    showPikachu(){
+        this.pikachu = !this.pikachu;
     }
 
     close(){
