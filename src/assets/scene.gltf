@@ -3,42 +3,42 @@
     {
       "bufferView": 1,
       "componentType": 5126,
-      "count": 604,
+      "count": 562,
       "max": [
-        68.078704833984375,
-        64.428451538085938,
-        24.663774490356445
+        471.125,
+        593.7030029296875,
+        238.34339904785156
       ],
       "min": [
-        9.4287023544311523,
-        37.226455688476562,
-        -0.0022263368591666222
+        0,
+        0,
+        0
       ],
       "type": "VEC3"
     },
     {
       "bufferView": 1,
-      "byteOffset": 7248,
+      "byteOffset": 6744,
       "componentType": 5126,
-      "count": 604,
+      "count": 562,
       "max": [
-        0.99537456035614014,
-        0.98683005571365356,
-        0.99716585874557495
+        0.99064677953720093,
+        0.99705910682678223,
+        0.99888849258422852
       ],
       "min": [
-        -0.99461239576339722,
-        -0.99973678588867188,
-        -0.99680989980697632
+        -0.99993801116943359,
+        -0.99500846862792969,
+        -0.99996256828308105
       ],
       "type": "VEC3"
     },
     {
       "bufferView": 0,
       "componentType": 5125,
-      "count": 2232,
+      "count": 3360,
       "max": [
-        603
+        561
       ],
       "min": [
         0
@@ -48,26 +48,26 @@
   ],
   "asset": {
     "extras": {
-      "author": "Hyungjung Kim (https://sketchfab.com/hyungjungkim)",
-      "license": "CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)",
-      "source": "https://sketchfab.com/models/81910476b24d4fc5a73c908d6c2a38a2",
-      "title": "Low Poly Cloud"
+      "author": "farhad.Guli (https://sketchfab.com/farhad.Guli)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/models/116f49c23c4347eba340d0f59b0601f7",
+      "title": "Clouds"
     },
-    "generator": "Sketchfab-3.18.7",
+    "generator": "Sketchfab-3.18.5",
     "version": "2.0"
   },
   "bufferViews": [
     {
       "buffer": 0,
-      "byteLength": 8928,
+      "byteLength": 13440,
       "byteOffset": 0,
       "name": "floatBufferViews",
       "target": 34963
     },
     {
       "buffer": 0,
-      "byteLength": 14496,
-      "byteOffset": 8928,
+      "byteLength": 13488,
+      "byteOffset": 13440,
       "byteStride": 12,
       "name": "floatBufferViews",
       "target": 34962
@@ -75,7 +75,7 @@
   ],
   "buffers": [
     {
-      "byteLength": 23424,
+      "byteLength": 26928,
       "uri": "scene.bin"
     }
   ],
@@ -87,12 +87,12 @@
         0,
         0
       ],
-      "name": "Scene_-_Root",
+      "name": "DEFAULT",
       "pbrMetallicRoughness": {
         "baseColorFactor": [
-          1,
-          1,
-          1,
+          0.29999999999999999,
+          0.29999999999999999,
+          0.29999999999999999,
           1
         ],
         "metallicFactor": 0,
@@ -138,7 +138,31 @@
       "children": [
         3
       ],
-      "name": "aac6d3af1717478786bd50f7c006ca5e.stl.cleaner.materialmerger.gles"
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -228.14100646972656,
+        -280.375,
+        -22.734399795532227,
+        1
+      ],
+      "name": "cloud.obj.cleaner.gles"
+    },
+    {
+      "children": [
+        4
+      ],
+      "name": ""
     },
     {
       "mesh": 0,
