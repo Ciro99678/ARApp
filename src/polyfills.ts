@@ -53,7 +53,7 @@
  */
 
 import './zone-flags.ts';
-
+import '../node_modules/aframe/dist/aframe-master'; //<- useful if you want to call a specific version of a-frame
 /***************************************************************************************************
  * Zone JS is required by default for Angular itself.
  */
